@@ -25,29 +25,37 @@ button {
         transform: scale(0.9);
     }
 }
-
+.input {
+    flex-direction: column;
+}
 .box {
-    width: 655px;
-    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 5px;
 }
 input {
+    border-radius: 10px;
     margin: 10px;
     padding: 10px;
     font-size: 20px;
+
 }
+
 .btn {
     background-color: unset;
+    position: absolute;
+    right: 15px;
+    top: 28%;
 }
 .btn img {
-    width: 40px;
-    height: 30px;
+    width: 30px;
+    height: 20px;
     object-fit: cover;
 }
 select {
+    border-radius: 10px;
+
     width: 274px;
     margin: 10px;
     padding: 10px;
@@ -59,12 +67,18 @@ option {
 
 }
 .boxes {
-    gap: 10px;
-    width: 800px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+    margin: 200px auto ;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 0px;
+padding: 15px 0;}
+.bx {
+    display: block;
+}
+.pswbtn {
+    position: relative;
+    display: inline-block;
+}
+h3, h2 {
+    text-align: center;
 }

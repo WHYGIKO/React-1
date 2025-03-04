@@ -43,14 +43,15 @@
                 }
             }
             return (
+                <div className="boxes">
                 <div className="container">
-                    <div className="boxes">
                         <div className="box">
                             <button onClick={delCount}>-</button>
                             <h2>{count}</h2>
                             <button onClick={() => setCount(count + 1)}>+</button>
                             <button onClick={() => setCount(count + +prompt(`Son kiriting: `))}>increment</button>
                         </div>
+                        <div className="box input">
                         <input
                             type="text"
                             placeholder={holder}
@@ -60,7 +61,8 @@
                         />
                         <h3>{checkText()}</h3>
                         <button onClick={() => setText('')}>del Input</button>
-                        <div className="box">
+                    </div>
+                        <div className="box pswbtn">
                             <input type={show ? 'password' : 'text'}
                                 placeholder={hldr} />
                             <button className="btn" onClick={() => setShow(!show)}>
@@ -71,8 +73,8 @@
                                 }
                             </button>
                         </div>
-                        <div className="box">
-                            <h2>Faoliyatingiz turini tanlang:</h2>
+                        <div className="box bx">
+                            <h3>Faoliyatingiz turini tanlang:</h3>
 
                             <select onChange={(e) => setSelect(e.target.value)
                             }>
